@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="styling.css" /> <!-- Add a separate CSS file for styling -->
+    <title>COVID-19 Dashboard</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#diseaseTracking">Disease Tracking</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#documentation">Documentation</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Header -->
+    <header>
+        <h1>COVID-19 Dashboard</h1>
+    </header>
+
+    <!-- Global Map Section -->
+    <section id="globalMap">
+        <h2>Global COVID-19 Map</h2>
+        <div id="map"></div>
+    </section>
+
+    <!-- Search Bar -->
+    <section id="searchBar">
+        <h2>Search COVID-19 Data</h2>
+        <input type="text" id="searchInput" placeholder="Search by state, continent, country, or province">
+        <button onclick="searchData()">Search</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Authors: Your Names</p>
+        <p>School Project: Project Name</p>
+        <p>APIs Used: <a href="https://disease.sh">Disease.sh</a>, <a href="https://leafletjs.com/">Leaflet</a>, ... (add others)</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
